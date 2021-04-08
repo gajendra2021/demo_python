@@ -59,6 +59,8 @@ def helm_del(cluster):
       
         #p3=Popen(['xargs','helm','delete'],stdin=p.stdout,stdout=PIPE)
         #stdout,stderr=p3.communicate()
+      else:
+        print("no data avilable older than 30 days")
   
 if __name__ == '__main__':
   if len(sys.argv) - 1 != 2:
