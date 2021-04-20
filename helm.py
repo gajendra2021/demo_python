@@ -77,9 +77,9 @@ if __name__ == '__main__':
   clusterName = sys.argv[2]
   print('Project ID = {0}, Cluster Name = {1}'.format(projectId, clusterName))
   #os.system("gcloud auth activate-service-account jenkins-test@inspiring-keel-308108.iam.gserviceaccount.com --key-file=jenkins-test.json")
-  os.system("gcloud container clusters get-credentials cluster-2 --zone us-east1-b --project inspiring-keel-308108")
+  #os.system("gcloud container clusters get-credentials cluster-2 --zone us-east1-b --project inspiring-keel-308108")
   #os.system("gcloud components install kubectl")
-  os.system("kubectl config use-context gke_inspiring-keel-308108_us-east1-b_cluster-2")
+  #os.system("kubectl config use-context gke_inspiring-keel-308108_us-east1-b_cluster-2")
   #os.system("gcloud config set account trygcponce@gmail.com")
   cmd = "gcloud config set project {0}".format(projectId)
   os.system(cmd)
