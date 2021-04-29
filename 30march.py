@@ -119,7 +119,7 @@ if __name__ == '__main__':
   print('Project ID = {0}, Cluster Name = {1}'.format(projectId, clusterName))
   #
   #os.system("gcloud auth login")
-  os.system("gcloud auth activate-service-account jenkins-test@inspiring-keel-308108.iam.gserviceaccount.com --key-file=jenkins-test.json")
+  #os.system("gcloud auth activate-service-account jenkins-test@inspiring-keel-308108.iam.gserviceaccount.com --key-file=jenkins-test.json")
   #os.system("gcloud config set account trygcponce@gmail.com")
   cmd = "gcloud config set project {0}".format(projectId)
   os.system(cmd)
