@@ -184,7 +184,7 @@ def main():
     clusters = GKEcontainer.get_cluster_details()
     for cluster in clusters:
         GKEcontainer.switch_cluster_context(cluster_zone=cluster['ZONE'])
-        namespaces = GKEcontainer.get_cluster_namespaces(creationtime='30 days ago')
+        namespaces = GKEcontainer.get_cluster_namespaces(creationtime='0 days ago')
 
         for namespace in list(str(namespaces).split(" ")):
             pods = GKEcontainer.get_namespace_pods(namespace=namespace)
